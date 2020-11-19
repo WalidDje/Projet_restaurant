@@ -1,0 +1,147 @@
+@media screen and (max-width: 600px)
+    {
+    #conteneur{
+    display: flex;
+    flex-direction: column;
+    }
+    @font-face {
+        font-family: 'Shrikhand';
+        src: url(Shrikhand-Regular.otf) format('OpenType')
+    }
+    @font-face {
+        font-family: 'Roboto';
+        src: url(RobotoSlab-Bold.ttf) format('TrueType'),
+            url(RobotoSlab-Light.ttf) format('TrueType'),
+            url(RobotoSlab-Regular.ttf) format('TrueType'),
+            url(RobotoSlab-Thin.ttf) format('TrueType');
+    }
+    figure, body{
+        margin: 0px;
+    }
+    header{
+        text-align: center;
+        font-family: 'Shrikhand';
+        position: relative;
+    }
+    .heart-title{
+        position: absolute;
+        right: 0.5em;
+    }
+    .fa-arrow-left{
+        justify-content: flex-start;
+        position: absolute;
+        left: 0.5em;
+    }
+    .titre-menu{
+        font-family: 'Shrikhand';
+        padding-left: 1em;
+    }
+    .reserver, .fonctionnement, .restaurants{
+        flex-direction: column;
+        width: 100%;
+        font-family: 'Roboto';
+    }
+    .entete{
+        background-color: grey;
+        padding-top: 17px;
+        padding-bottom: 17px;
+    }
+    .reserver{
+        background-color: lightgrey;
+        padding-bottom: 40px;
+    }
+    img{
+        width:100%;
+    }
+    .fonctionnement, .reserver, .entete{
+        text-align: center;
+    }
+    .entrees, .plats, .desserts{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0.4em;
+        padding-right: 00.4em;
+        margin-top: 2em;
+        font-family: 'Roboto';
+    }
+    .commander{
+        justify-self: center;
+        text-align: center;
+        margin-top: 5em;
+        margin-bottom: 5em;
+        display: inline-block;
+        color: white;
+        width: 100%;
+        background-color: #FF79DA;
+        border-radius: 25px;
+    }
+    .explorer{
+        display: inline-block;
+        color: white;
+        width: 70%;
+        background-color: #FF79DA;
+        border-radius: 35px;
+    }
+    .item-fonctionnement{
+        background-color: violet;
+        padding: 0.4em;
+        border-radius: 150%;
+        width: 17px;
+        height: 17px;
+        position: absolute;
+        left: -1em;
+    }
+    .icon-fonctionnement {
+        position: absolute;
+        left: 2em;
+    }
+    .btn-fonction{
+        display: inline-block;
+        position: relative;
+        font-size: 0.8em;
+        background-color: rgb(245, 245, 245);
+        width: 90%;
+        margin: 0.4em;    
+        border-radius: 20px;
+        box-shadow: 4px 4px 10px darkgrey;
+    }
+    .btn-resto{
+        display: inline-block;
+        border-radius: 10%;
+        height: 30px;
+        width:100%;
+    }
+    h3, .click-dish{
+        margin-bottom: 10px;
+    }
+    .btn-resto, img{
+        height: 14em;
+        object-fit: cover;
+    }
+    .food-price{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .click-dish{
+        display: inline-block;
+        background-color: rgb(218, 218, 218);
+        width: 100%;
+        height: 6em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        border-radius: 17px;
+        box-shadow: 4px 4px 10px black;
+        object-fit: contain;
+    }
+    .omf-footer{
+        font-family: 'Shrikhand';
+        font-weight: lighter;
+    }
+    .footer{
+        background-color: rgb(31, 31, 31);
+        color: white;
+        padding: 0.5em 0.5em 0.5em;
+        padding-left: 1em;
+    }
+}
