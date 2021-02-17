@@ -309,62 +309,136 @@ a{
         }
     }
     .lds-ellipsis {
-        z-index: 10;
-        display: flex;
+        z-index: -1;
+        opacity: 0;
+        visibility: hidden;
         position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         height: 100%;
         background-color: rgb(0, 0, 0, 50%);
-      }
-      .lds-ellipsis div {
-        position: absolute;
-        top: 33px;
-        width: 13px;
-        height: 13px;
-        border-radius: 50%;
-        background: #fff;
+        animation: lds-start 5s;
+        animation-iteration-count: 1;
+    }
+    .lds-ellipsis div {
+        width: 40px;
+        height: 40px;
+        margin: 0.5rem;
+        border-radius: 150%;
+        animation: lds-ellipsis1 0.8s infinite;
         animation-timing-function: cubic-bezier(0, 1, 1, 0);
-      }
-      .lds-ellipsis div:nth-child(1) {
-        left: 8px;
-        animation: lds-ellipsis1 0.6s infinite;
-      }
-      .lds-ellipsis div:nth-child(2) {
-        left: 8px;
-        animation: lds-ellipsis2 0.6s infinite;
-      }
-      .lds-ellipsis div:nth-child(3) {
-        left: 32px;
-        animation: lds-ellipsis2 0.6s infinite;
-      }
-      .lds-ellipsis div:nth-child(4) {
-        left: 56px;
-        animation: lds-ellipsis3 0.6s infinite;
-      }
-      @keyframes lds-ellipsis1 {
+    }
+    .lds-ellipsis div:nth-child(1) {
+        background-color: #cf23cf;
+        animation: lds-change1 1s infinite;
+    }
+    .lds-ellipsis div:nth-child(2) {
+        background-color: #9d11dd;
+        animation: lds-change2 1s infinite;
+    }
+    .lds-ellipsis div:nth-child(3) {
+        background-color: #5f0ae7;
+        animation: lds-change3 1s infinite;
+    }
+    
+    @keyframes lds-start {
         0% {
-          transform: scale(0);
+            z-index: 10;
+            opacity: 1;
+            visibility: visible;
+        }
+        50% {
+            opacity: 1;
         }
         100% {
-          transform: scale(1);
+            z-index: -1;
+            opacity: 0;
+            visibility: hidden;
         }
-      }
-      @keyframes lds-ellipsis3 {
-        0% {
-          transform: scale(1);
+    }
+    @keyframes lds-change1{
+        0%{
+            z-index: 10;
+            opacity: 1;
+            background-color: #bd00ce;
         }
-        100% {
-          transform: scale(0);
+        25%{
+            z-index: 10;
+            opacity: 1;
+            background-color: #c62cd4;
         }
-      }
-      @keyframes lds-ellipsis2 {
-        0% {
-          transform: translate(0, 0);
+        50%{
+            z-index: 10;
+            opacity: 1;
+            background-color: #c23bce;
         }
-        100% {
-          transform: translate(24px, 0);
+        75%{
+            z-index: 10;
+            opacity: 1;
+            background-color: #c574cc;
         }
-      }
+        100%{
+            z-index: 10;
+            opacity: 1;
+            background-color: #c9a9cc;
+        }
+    }
+    @keyframes lds-change2{
+        0%{
+            z-index: 10;
+            opacity: 1;
+            background-color: #ff0080;
+        }
+        25%{
+            z-index: 10;
+            opacity: 1;
+            background-color: #ff0080;
+        }
+        50%{
+            z-index: 10;
+            opacity: 1;
+            background-color: #ff379b;
+        }
+        75%{
+            z-index: 10;
+            opacity: 1;
+            background-color: #ff58ab;
+        }
+        100%{
+            z-index: 10;
+            opacity: 1;
+            background-color: #ffa4d2;
+        }
+    }
+    @keyframes lds-change3{
+        0%{
+            z-index: 10;
+            opacity: 1;
+            background-color: #ff0040;
+        }
+        25%{
+            z-index: 10;
+            opacity: 1;
+            background-color: #ff0040;
+        }
+        50%{
+            z-index: 10;
+            opacity: 1;
+            background-color: #ff0040;
+        }
+        75%{
+            z-index: 10;
+            opacity: 1;
+            background-color: #ff3c6d;
+        }
+        100%{
+            z-index: 10;
+            opacity: 1;
+            background-color: #ff8eaa;
+        }
+    }
 
 /* ANIMATIONS END */
 
