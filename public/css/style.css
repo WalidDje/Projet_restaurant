@@ -125,6 +125,14 @@ img{
 .explorer:hover{
     cursor: pointer;
     color: rgb(216, 215, 215);
+    box-shadow: 5px 5px 5px rgb(43, 43, 43);
+    background: linear-gradient(350deg, rgb(205, 146, 247) 0%, rgb(191, 77, 214) 37%, rgb(225, 116, 247)75%, rgb(242, 153, 252) 100%);
+}
+.commander:hover{
+    cursor: pointer;
+    color: rgb(216, 215, 215);
+    box-shadow: 5px 5px 5px rgb(43, 43, 43);
+    background: linear-gradient(350deg, rgb(205, 146, 247) 0%, rgb(191, 77, 214) 37%, rgb(225, 116, 247)75%, rgb(242, 153, 252) 100%);
 }
 .btn-resto:hover{
     cursor: pointer;
@@ -155,16 +163,18 @@ img{
 .coeur-resto:hover{
     cursor: pointer;
 }
+.coeurs:hover .coeur-resto{
+    visibility: hidden;
+}
+.coeurs:hover .coeur-violet{
+    visibility: visible;
+}
+
 /* ALL HOVER STUFF END*/
 
 /* ALL ACTIVE STUFF START*/
 
-.coeurs:active .coeur-resto{
-    visibility: hidden;
-}
-.coeurs:active .coeur-violet{
-    visibility: visible;
-}
+
 
 /* ALL ACTIVE STUFF END*/
 
@@ -175,9 +185,9 @@ img{
     align-items: center;
     font-size: 0.8em;
     background-color: rgb(245, 245, 245);
-    width: 50%;
-    margin: 1em;
-    margin-left: 20em;
+    width: 70%;
+    margin: auto;
+    margin-top: 1rem;
     border-radius: 20px;
     box-shadow: 4px 4px 10px darkgrey;
 }
@@ -444,22 +454,28 @@ a{
 
 @media (max-width: 800px)
 {
-    .btn-fonction{
-        margin-left: 14em;
-    }
     header{
         margin-bottom: 0em;
+    }
+    .btn-fonction{
+        margin-left: 5rem;
     }
     .click-dish{
         width: 92%;
     }
+    .coeurs:active .coeur-resto{
+        visibility: hidden;
+    }
+    .coeurs:active .coeur-violet{
+        visibility: visible;
+    }
+    
 }
 
 @media (max-width: 600px)
 {
     body{
         width: 100%;
-        margin: 0;
     }
     header{
         margin-bottom: 0;
@@ -468,8 +484,7 @@ a{
         padding-left: 1rem;
     }
     .btn-fonction{
-        margin-left: 3em;
-        width: 80%;
+        width: 70%;
     }
     .explorer{
         width: 80%;
