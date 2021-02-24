@@ -36,7 +36,6 @@ header{
     text-align: center;
     font-family: 'Shrikhand';
     position: relative;
-    margin-bottom: 5em;
 }
 .heart-title{
     position: absolute;
@@ -100,7 +99,7 @@ img{
     border-radius: 35px;
 }
 .item-fonctionnement{
-    background-color: violet;
+    background-color: #FF79DA;
     padding: 0.4em;
     border-radius: 150%;
     width: 17px;
@@ -199,10 +198,10 @@ img{
 }
 .nouveau{
     position: absolute;
-    color: green;
+    color: #448352;
     right: 1rem;
     top: 1rem;
-    background-color: rgb(141, 236, 141);
+    background-color: #99E2D0;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     border-radius: 0.2rem;
     box-shadow: 0 0 4px black;
@@ -281,7 +280,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: aqua;
+    background-color: #99E2D0;
     border-radius: 5px 20px 20px 5px;
     transition: 0.5s;
 }
